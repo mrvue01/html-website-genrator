@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "law-firm-premium",
+    "name": "Law Firm Premium",
+    "industry": "Law",
+    "tone": "Trustworthy, refined",
+    "layout": "Split hero + proof"
+  },
+  {
+    "slug": "dental-clinic-modern",
+    "name": "Dental Clinic Modern",
+    "industry": "Dental",
+    "tone": "Clean, calming",
+    "layout": "Editorial cards"
+  },
+  {
+    "slug": "real-estate-luxury",
+    "name": "Real Estate Luxury",
+    "industry": "Real Estate",
+    "tone": "High-end, confident",
+    "layout": "Showcase grid"
+  },
+  {
+    "slug": "restaurant-bistro",
+    "name": "Restaurant Bistro",
+    "industry": "Restaurant",
+    "tone": "Warm, inviting",
+    "layout": "Centered story"
+  },
+  {
+    "slug": "saas-product-conversion",
+    "name": "SaaS Product Conversion",
+    "industry": "SaaS",
+    "tone": "Sharp, modern",
+    "layout": "Dashboard landing"
+  },
+  {
+    "slug": "marketing-agency-bold",
+    "name": "Marketing Agency Bold",
+    "industry": "Agency",
+    "tone": "Confident, creative",
+    "layout": "Asymmetric content"
+  },
+  {
+    "slug": "construction-company",
+    "name": "Construction Company",
+    "industry": "Construction",
+    "tone": "Strong, practical",
+    "layout": "Service-led"
+  },
+  {
+    "slug": "medical-clinic-clean",
+    "name": "Medical Clinic Clean",
+    "industry": "Medical",
+    "tone": "Professional, reassuring",
+    "layout": "Trust-first"
+  },
+  {
+    "slug": "fitness-gym-energetic",
+    "name": "Fitness Gym Energetic",
+    "industry": "Fitness",
+    "tone": "Bold, energetic",
+    "layout": "Promo blocks"
+  },
+  {
+    "slug": "education-academy",
+    "name": "Education Academy",
+    "industry": "Education",
+    "tone": "Structured, warm",
+    "layout": "Program sections"
+  },
+  {
+    "slug": "nonprofit-donation",
+    "name": "Nonprofit Donation",
+    "industry": "Nonprofit",
+    "tone": "Mission-driven",
+    "layout": "Story + impact"
+  },
+  {
+    "slug": "ecommerce-skincare",
+    "name": "Ecommerce Skincare",
+    "industry": "Ecommerce",
+    "tone": "Soft, premium",
+    "layout": "Product feature grid"
+  },
+  {
+    "slug": "photography-portfolio",
+    "name": "Photography Portfolio",
+    "industry": "Portfolio",
+    "tone": "Minimal, visual",
+    "layout": "Gallery-first"
+  },
+  {
+    "slug": "wedding-planner-elegant",
+    "name": "Wedding Planner Elegant",
+    "industry": "Events",
+    "tone": "Elegant, emotional",
+    "layout": "Luxury editorial"
+  },
+  {
+    "slug": "auto-repair-local",
+    "name": "Auto Repair Local",
+    "industry": "Auto Repair",
+    "tone": "Reliable, direct",
+    "layout": "Local service"
+  },
+  {
+    "slug": "roofing-services",
+    "name": "Roofing Services",
+    "industry": "Roofing",
+    "tone": "Dependable, practical",
+    "layout": "Lead-gen"
+  },
+  {
+    "slug": "home-services-plumbing",
+    "name": "Plumbing Services",
+    "industry": "Plumbing",
+    "tone": "Fast, local",
+    "layout": "Offer + trust"
+  },
+  {
+    "slug": "consulting-corporate",
+    "name": "Corporate Consulting",
+    "industry": "Consulting",
+    "tone": "Executive, clear",
+    "layout": "Insight-led"
+  },
+  {
+    "slug": "insurance-broker",
+    "name": "Insurance Broker",
+    "industry": "Insurance",
+    "tone": "Calm, clear",
+    "layout": "Benefits + FAQ"
+  },
+  {
+    "slug": "travel-agency",
+    "name": "Travel Agency",
+    "industry": "Travel",
+    "tone": "Aspirational, polished",
+    "layout": "Destination storytelling"
+  },
+  {
+    "slug": "event-conference",
+    "name": "Conference Event",
+    "industry": "Event",
+    "tone": "Future-facing, dynamic",
+    "layout": "Schedule + speakers"
+  },
+  {
+    "slug": "beauty-salon",
+    "name": "Beauty Salon",
+    "industry": "Beauty",
+    "tone": "Refined, stylish",
+    "layout": "Experience-led"
+  },
+  {
+    "slug": "tech-startup-launch",
+    "name": "Tech Startup Launch",
+    "industry": "Startup",
+    "tone": "Momentum, clarity",
+    "layout": "Launch flow"
+  },
+  {
+    "slug": "local-church-community",
+    "name": "Church Community",
+    "industry": "Community",
+    "tone": "Welcoming, warm",
+    "layout": "Mission + visit info"
+  }
+]
