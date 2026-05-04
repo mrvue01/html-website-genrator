@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Website Builder Dashboard</title>
+  <meta name="description" content="Browser-based dashboard that generates professional website starter pages from customer business data and template selection.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="40" height="40" rx="14" stroke="currentColor" stroke-width="2.2"/><path d="M13 31V17h9.2c5.4 0 9.8 2.8 9.8 7s-4.4 7-9.8 7H13Z" stroke="currentColor" stroke-width="2.2"/><path d="M21 17v14" stroke="currentColor" stroke-width="2.2"/></svg>
+        </div>
+        <div>
+          <strong>Website Creator AI</strong>
+          <p>Dashboard generator</p>
+        </div>
+      </div>
+      <nav class="sidebar-nav" aria-label="Dashboard sections">
+        <a href="#overview">Overview</a>
+        <a href="#generator">Generator</a>
+        <a href="#templates">Templates</a>
+        <a href="#preview">Preview</a>
+        <a href="#export">Export</a>
+      </nav>
+      <div class="sidebar-card">
+        <span class="badge">24 layouts</span>
+        <h2>Customer-ready starter system</h2>
+        <p>Choose a layout, enter business data, generate polished copy, and export a standalone HTML file.</p>
+      </div>
+      <button class="theme-toggle" data-theme-toggle type="button">Theme</button>
+    </aside>
+
+    <main id="main" class="main">
+      <header class="topbar" id="overview">
+        <div>
+          <p class="eyebrow">AI website operations</p>
+          <h1>Generate professional websites from standard customer data.</h1>
+          <p class="lead">This browser app combines reusable layouts, guided content prompts, and instant previewing so you can turn intake details into polished website drafts faster.</p>
+        </div>
+        <div class="topbar-actions">
+          <button class="btn secondary" id="loadDemoBtn" type="button">Load demo data</button>
+          <button class="btn primary" id="generateBtnTop" type="button">Generate website</button>
+        </div>
+      </header>
+
+      <section class="stats-grid" aria-label="Dashboard metrics">
+        <article class="stat-card"><span class="stat-label">Layouts</span><strong>24</strong><p>Industry-specific starters.</p></article>
+        <article class="stat-card"><span class="stat-label">Fields</span><strong>12</strong><p>Standard customer intake inputs.</p></article>
+        <article class="stat-card"><span class="stat-label">Output</span><strong>HTML</strong><p>Portable export format.</p></article>
+        <article class="stat-card"><span class="stat-label">Themes</span><strong>2</strong><p>Light and dark included.</p></article>
+      </section>
+
+      <section id="generator" class="panel two-col">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Customer intake</p>
+            <h2>Business data form</h2>
+          </div>
+          <p class="muted">Enter the standard details your customer provides. The generator uses them to assemble a clean website draft with clear sections and stronger conversion flow.</p>
+        </div>
+        <div class="split-grid">
+          <form id="generatorForm" class="form-grid">
+            <label>Business name<input class="input" name="businessName" placeholder="Northline Legal Group" required></label>
+            <label>Industry<input class="input" name="industry" placeholder="Law firm" required></label>
+            <label>Location<input class="input" name="location" placeholder="Minneapolis, MN"></label>
+            <label>Primary goal<input class="input" name="goal" placeholder="Generate qualified consultations"></label>
+            <label>Headline<input class="input" name="headline" placeholder="Clear legal guidance when the stakes are high"></label>
+            <label>Subheadline<textarea class="input" name="subheadline" rows="4" placeholder="Describe the value proposition, credibility, and the outcome customers want."></textarea></label>
+            <label>Service 1<input class="input" name="service1" placeholder="Business litigation"></label>
+            <label>Service 2<input class="input" name="service2" placeholder="Employment counsel"></label>
+            <label>Service 3<input class="input" name="service3" placeholder="Contract review"></label>
+            <label>Trust point 1<input class="input" name="trust1" placeholder="20+ years combined experience"></label>
+            <label>Trust point 2<input class="input" name="trust2" placeholder="Responsive communication"></label>
+            <label>CTA<input class="input" name="cta" placeholder="Book a consultation"></label>
+          </form>
+
+          <div class="panel stack">
+            <div>
+              <p class="eyebrow">Generator logic</p>
+              <h3>How this draft is assembled</h3>
+            </div>
+            <ul class="list">
+              <li>Maps business data into hero, services, proof, testimonial, and CTA sections.</li>
+              <li>Uses the selected layout’s tone and structure to shape wording and visual hierarchy.</li>
+              <li>Creates an exportable HTML page customers can edit or publish.</li>
+            </ul>
+            <button class="btn primary" id="generateBtnSide" type="button">Generate website</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="templates" class="panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Template library</p>
+            <h2>Select a starting layout</h2>
+          </div>
+          <p class="muted">Choose from professional layouts for service businesses, SaaS, ecommerce, portfolio sites, nonprofits, and local organizations.</p>
+        </div>
+        <div id="templateGrid" class="template-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="preview" class="panel preview-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Instant preview</p>
+            <h2>Generated website draft</h2>
+          </div>
+          <p class="muted">The preview updates in the browser so you can test content structure before exporting the file.</p>
+        </div>
+        <div class="preview-toolbar">
+          <span class="badge" id="selectedTemplateBadge">No template selected</span>
+          <div class="toolbar-actions">
+            <button class="btn secondary" id="copyHtmlBtn" type="button">Copy HTML</button>
+            <button class="btn primary" id="downloadBtn" type="button">Download HTML</button>
+          </div>
+        </div>
+        <iframe id="previewFrame" title="Website preview"></iframe>
+      </section>
+
+      <section id="export" class="panel export-panel">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Export workflow</p>
+            <h2>Use generated files in delivery</h2>
+          </div>
+          <p class="muted">Export the generated HTML, then plug it into your broader template folders or GitHub-based workflow.</p>
+        </div>
+        <div class="export-grid">
+          <article class="info-card">
+            <h3>Recommended process</h3>
+            <ol>
+              <li>Select a template that matches the customer’s business model.</li>
+              <li>Fill in standard business data from intake or onboarding.</li>
+              <li>Generate, review, and refine the website draft.</li>
+              <li>Download the HTML and place it into a customer project folder.</li>
+            </ol>
+          </article>
+          <article class="info-card">
+            <h3>Good next step</h3>
+            <p>Connect this dashboard to an API for text generation, image generation, GitHub repo creation, or automated multi-page output.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./assets/app.js" defer></script>
+</body>
+</html>
